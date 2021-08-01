@@ -60,20 +60,27 @@ while option != "q":
         # TODO - Search for a book by title
 
     if option == "3":
-        print("Adding a book...")
-        add_book = input("Which book would you like to add? ")
-        
-        
-
-
-         
+         print("Adding a book...")
+         add_title = input("What is the book title you would like to add? ")
+         add_author = input("Who is the author of the book? ")
+         new_book = {"author" : add_author, "title" : add_title}
+         library["books"].append(new_book)
     
     if option == "4":
         print("Removing a book...")
-        book_to_remove = input("Which book would you like to remove? ")
+        title_to_remove = input("What is the title of the book you would like to remove? ")
+        book_to_remove = None
+        for book in library["books"]:
+            if title_to_remove == book["title"]:
+                book_to_remove = book            
+                library["books"].remove(book)
+        # if title_to_remove == book_to_remove:
+        #     print(f"{title_to_remove} has now been deleted from our library")
+        # else:
+        #     print("This book is not in our library")
 
-            # TODO - Remove a book
+             
 
     if option == "5":
-        print("Updating a book...")
-        # TODO - Update a book
+         print("Updating a book...")
+    
