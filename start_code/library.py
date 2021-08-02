@@ -25,7 +25,7 @@ library = {
 }
 
 
-print(f"Welcome everyone to {library['name']}")
+print(f"Welcome to {library['name']}")
 
 option = ""
 while option != "q":
@@ -55,7 +55,7 @@ while option != "q":
                  print(f"{book['title']} by {book['author']}")
         else:
             print("Book not found.")
-            
+
 
     if option == "3":
          print("Adding a book...")
@@ -81,4 +81,5 @@ while option != "q":
 
     if option == "5":
          print("Updating a book...")
+
     
