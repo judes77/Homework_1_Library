@@ -24,7 +24,7 @@ library = {
     ]
 }
 
-# TODO - Print welcome statement including library name
+
 print(f"Welcome everyone to {library['name']}")
 
 option = ""
@@ -43,8 +43,6 @@ while option != "q":
         print("Listing all books...")
         for book in library["books"]:
             print(f"{book['title']} by {book['author']}")
-
-    # TODO - List all books
     
 
     if option == "2":
@@ -57,7 +55,7 @@ while option != "q":
                  print(f"{book['title']} by {book['author']}")
         else:
             print("Book not found.")
-        # TODO - Search for a book by title
+            
 
     if option == "3":
          print("Adding a book...")
